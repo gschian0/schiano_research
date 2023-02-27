@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import styles2 from "../styles/theme.js"
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -18,7 +19,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <a
+        <Link
         href="/"
         target="_blank"
         rel="noopener noreferrer"
@@ -27,12 +28,12 @@ const Home: NextPage = () => {
         height={50}
         
         alt="logo"></Image>
-        </a>
+        </Link>
 
         <h1 className={styles.title}>
-          <a href="/info">schiano research</a>
+          <Link href="/info">schiano research</Link>
         </h1>
-        <a href="mailto:gschiano@me.com">gschiano@me.com</a>
+        <Link href="mailto:gschiano@me.com">gschiano@me.com</Link>
 
         <p className={styles.description}>
           the local leader in independent research{' '}
@@ -44,7 +45,7 @@ const Home: NextPage = () => {
       </main>
 
       <footer className={styles.footer}>
-        <a
+        <Link
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
@@ -53,7 +54,7 @@ const Home: NextPage = () => {
           <span className={styles.logo}>
            <code>zen 2023 burnt into the web by GENNARO SCHIANO @ schiano_research</code>
           </span>
-        </a>
+        </Link>
       </footer>
     </div>
   )

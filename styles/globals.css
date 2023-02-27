@@ -18,3 +18,84 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.clouds {
+  height: 100vh;
+  background: linear-gradient(to bottom, #87cefa 0%, #1e90ff 100%);
+  overflow: hidden;
+}
+
+.cloud {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  background: white;
+  opacity: 0.8;
+  border-radius: 100px;
+  box-shadow: 0 5px 35px 0 white;
+  animation: drift 60s linear infinite;
+  transform: translate3d(0, -50%, 0);
+}
+
+.x1 {
+  top: 10%;
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.x2 {
+  top: 20%;
+  left: 20%;
+  animation-delay: -5s;
+}
+
+.x3 {
+  top: 25%;
+  left: 10%;
+  animation-delay: -10s;
+}
+
+.x4 {
+  top: 40%;
+  left: 30%;
+  animation-delay: -15s;
+}
+
+.x5 {
+  top: 50%;
+  left: 20%;
+  animation-delay: -20s;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate3d(0, -50%, 0);
+  }
+  5% {
+    transform: translate3d(-5%, -50%, 0);
+  }
+  15% {
+    transform: translate3d(10%, -50%, 0);
+  }
+  25% {
+    transform: translate3d(-15%, -50%, 0);
+  }
+  40% {
+    transform: translate3d(20%, -50%, 0);
+  }
+  50% {
+    transform: translate3d(-25%, -50%, 0);
+  }
+  60% {
+    transform: translate3d(30%, -50%, 0);
+  }
+  75% {
+    transform: translate3d(-35%, -50%, 0);
+  }
+  90% {
+    transform: translate3d(40%, -50%, 0);
+  }
+  100% {
+    transform: translate3d(110%, -50%, 0);
+  }
+}

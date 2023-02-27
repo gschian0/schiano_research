@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import styles2 from "../styles/theme.js"
-
+import Link from "next/link";
 const Home: NextPage = () => {
   return (
 
@@ -18,10 +18,16 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <Image src="/bud_in_cave_logo.png"
+      <Link
+        href="/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >        <Image src="/bud_in_cave_logo.png"
         width={50}
         height={50}
+        
         alt="logo"></Image>
+        </Link>
         <h1 className={styles.title}>
           <a href="/info">schiano research</a>
         </h1>
@@ -63,6 +69,11 @@ const Home: NextPage = () => {
        </div>
 
 
+{/* 
+  <div className="cloud">
+    <h1>0</h1>
+    <h1>     0</h1>
+  </div> */}
 
 
 
