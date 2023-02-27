@@ -8,6 +8,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'DM Mono', monospace;
+  background-image: url('../public/out-0.png');
 }
 
 a {
