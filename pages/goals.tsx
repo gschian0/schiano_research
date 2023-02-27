@@ -48,7 +48,7 @@ const Home: NextPage = () => {
           A unified theory of everything? 
         </code>
         <code>
-          maybe we can't prove it... but we can try to feel it 
+          maybe we can&rsquo;t prove it... but we can try to feel it 
      
         </code>
         <br></br>

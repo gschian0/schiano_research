@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "instagram-private-api": "^1.45.3",
     "next": "13.2.1",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
